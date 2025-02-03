@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "navarchy",
+	"version": "${version}",
+	"name": "Navarchy",
+	"description": "Your navigator for your travels on 2b2t",
+	"authors": [
+		"lomacanderson"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/navarchy/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.lomacanderson.navarchy.Navarchy"
+		],
+		"client": [
+			"net.lomacanderson.navarchy.NavarchyClient"
+		],
+		"fabric-datagen": [
+			"net.lomacanderson.navarchy.NavarchyDataGenerator"
+		]
+	},
+	"mixins": [
+		"navarchy.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
